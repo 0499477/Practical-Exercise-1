@@ -5,23 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Formatted Text Example</title>
 <style>
-    .small-text { font-size: smaller; }
+    .smaller-text { font-size: smaller; }
     .green-text { color: green; }
-    .orange-highlight { background-color: orange; }
+    .highlight { background-color: orange; }
 </style>
 </head>
 <body>
 
-<h1 style="text-align: center;">This centered heading is <em>emphasised just here</em></h1>
+<h1 style="text-align: center;">This <span style="text-align: center;">centered</span> heading is <em>emphasised just here</em></h1>
 
-<p>This is a <s>normal paragraph</s> <strong>paragraph of great importance!</strong></p>
+<p>This is a <del>normal paragraph</del> <strong>paragraph of great importance!</strong></p>
 
-<p>Another paragraph with some text that goes from <strong>bold to <em>bold and italic to</em></strong> <em>just italic</em>.</p>
+<p>Another paragraph with some text that goes from <b>bold</b> to <b><i>bold and italic</i></b> to just <i>italic</i>.</p>
 <hr>
 
 <p>This third paragraph spans multiple lines,<br>
-And has a link to "http://nyan.cat"<a href="http://nyan.cat"><sub>HERE</sub></a><br>
-It also has some <span class="small-text green-text">small, green text</span> and some <span class="orange-highlight">orange highlighted text</span>.</p>
+And has a link to <a href="http://nyan.cat"><sup>HERE</sup></a><br>
+It also has some <small class="green-text">small, green text</small> and some <mark class="highlight">orange highlighted text</mark>.</p>
 
 <pre>Mathematical formulas work well as preformatted text, like this one:
 Log<sub>x</sub> = Log<sub>a</sub>x/Log<sub>a</sub>b
