@@ -5,23 +5,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Formatted Text Example</title>
 <style>
+    
+    .centered { text-align: center; }
+    .emphasized { font-style: italic; }
+    .bold { font-weight: bold; }
+    .italic { font-style: italic; }
+    .strikethrough { text-decoration: line-through; }
     .small-text { font-size: smaller; }
     .green-text { color: green; }
-    .orange-text { background-color: orange; }
+    .orange-highlight { background-color: orange; }
+    .subscript-link { 
+        text-decoration: none; 
+        vertical-align: super; 
+        font-size: smaller; 
+    }
 </style>
 </head>
 <body>
 
-<h1 style="text-align: center;">This <em>centered</em> heading is <em>emphasised just here</em></h1>
+<h1 class="centered">This <span class="emphasized">centered</span> heading is <span class="emphasized">emphasised just here</span></h1>
 
-<p>This is a <strong>normal paragraph</strong> paragraph of great importance!</p>
+<p>This is a <span class="strikethrough">normal paragraph</span> paragraph of great importance!</p>
 
-<p>Another paragraph with some text that goes from <strong>bold</strong> to <strong><em>bold and italic</em></strong> to just <em>italic</em>.</p>
+<p>Another paragraph with some text that goes from <span class="bold">bold</span> to <span class="bold italic">bold and italic</span> to just <span class="italic">italic</span>.</p>
 <hr>
 
 <p>This third paragraph spans multiple lines,<br>
-And has a link to <a href="http://nyan.cat">HERE</a><br>
-It also has some <span class="small-text green-text">small, green text</span> and some <span class="orange-text">orange highlighted text</span>.</p>
+And has a link to <a href="http://nyan.cat" class="subscript-link">HERE</a><br>
+It also has some <span class="small-text green-text">small, green text</span> and some <span class="orange-highlight">orange highlighted text</span>.</p>
 
 <pre>Mathematical formulas work well as preformatted text, like this one:
 Log<sub>x</sub> = Log<sub>a</sub>x/Log<sub>a</sub>b
@@ -29,3 +40,4 @@ Log<sub>x</sub> = Log<sub>a</sub>x/Log<sub>a</sub>b
 
 </body>
 </html>
+
